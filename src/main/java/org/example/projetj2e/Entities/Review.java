@@ -22,6 +22,7 @@ public class Review {
     public Long getIdReview() {
         return idReview;
     }
+//    test iyed
 
     public void setIdReview(Long idReview) {
         this.idReview = idReview;

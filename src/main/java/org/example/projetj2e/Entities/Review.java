@@ -1,5 +1,6 @@
 package org.example.projetj2e.Entities;
 
+
 import jakarta.persistence.*;
 import org.springframework.scheduling.support.SimpleTriggerContext;
 

@@ -13,14 +13,13 @@ public class User {
     private Long idUser;
     private String Name;
     private String PhoneNumber;
-
     @Enumerated(EnumType.STRING)
     private Role role;
     @OneToMany(mappedBy = "driver", cascade = CascadeType.ALL)
     private List<Ride> rides;
     @OneToMany(mappedBy = "passenger", cascade = CascadeType.ALL)
     private List<Reservation> reservations;
-    @OneToMany(mappedBy = "reviewedUser", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "passenger", cascade = CascadeType.ALL)
     private List<Review> reviews;
 
     public String getName() {
